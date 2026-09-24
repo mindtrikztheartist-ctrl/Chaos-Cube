@@ -1,5 +1,6 @@
 let enemyHP = 50;
 let enemyDamage = 10;
+let playerHP = 100;
 
 function attack() {
     enemyHP -= 10;
