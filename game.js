@@ -24,6 +24,16 @@ function attack() {
         
         document.getElementById("hp").textContent = playerHP;
 
+        if (playerHP <=0) {
+            playerHP = 0;
+            battleOver = true;
+
+            document.getElementById("hp").textContent = playerHP;
+
+            document.getElementById("message").textContent =
+                "You were defeated!";
+        }
+
         document.getElementById("message").textContent =
             "You attacked the enemy! Enemy HP: " + enemyHP +
             " - Enemy attacks you for " + enemyDamage + " damage!";
