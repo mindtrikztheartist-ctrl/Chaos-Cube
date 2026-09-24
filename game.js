@@ -32,11 +32,12 @@ function attack() {
 
             document.getElementById("message").textContent =
                 "You were defeated!";
-        }
-
-        document.getElementById("message").textContent =
+        } else {
+                    document.getElementById("message").textContent =
             "You attacked the enemy! Enemy HP: " + enemyHP +
             " - Enemy attacks you for " + enemyDamage + " damage!";
+
+
       
     }
 }
