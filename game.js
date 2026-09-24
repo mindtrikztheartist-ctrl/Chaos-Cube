@@ -4,7 +4,12 @@ let playerHP = 100;
 let battleOver = false;
 
 function attack() {
+    if (battleOver) {
+        return;
+    }
+    
     enemyHP -= 10;
+    
 
     document.getElementById("enemy-hp").textContent = enemyHP;
     document.getElementById("enemy-hp-fill").style.width = (enemyHP / 50) * 100 + "%";
