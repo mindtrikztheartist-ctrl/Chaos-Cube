@@ -16,6 +16,7 @@ function attack() {
   
     if (enemyHP <=0) {
         enemyHP = 0;
+        battleOver = true;
         document.getElementById("message").textContent =
             "Enemy defeated!";
     } else {
