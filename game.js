@@ -1,6 +1,7 @@
 let enemyHP = 50;
 let enemyDamage = 10;
 let playerHP = 100;
+let battleOver = false;
 
 function attack() {
     enemyHP -= 10;
