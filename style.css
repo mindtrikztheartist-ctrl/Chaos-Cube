@@ -61,3 +61,25 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
+
+#enemy {
+    text-align: center;
+}
+
+#enemy-sprite {
+    font-size: 70px;
+}
+
+#enemy-HP-bar {
+    width: 150px;
+    height: 20px;
+    backgroun: #555;
+    border: 2px solid white;
+    margin: 10px auto;
+}
+
+#enemy-HP-fill {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
