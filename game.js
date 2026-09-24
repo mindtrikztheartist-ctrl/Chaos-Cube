@@ -1,5 +1,5 @@
 let enemyHP = 50;
-let enemyDamage = 10;
+let enemyDamage = 25;
 let playerHP = 100;
 let battleOver = false;
 
