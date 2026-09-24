@@ -4,7 +4,7 @@ function attack() {
     enemyHP -= 10;
 
     document.getElementById("enemy-hp").textContent = enemyHP;
-    document.getElementById("enemy-hp-fill").style.width = (enemyHP / 50) * 100 + "&";
+    document.getElementById("enemy-hp-fill").style.width = (enemyHP / 50) * 100 + "%";
   
     if (enemyHP <=0) {
         enemyHP = 0;
