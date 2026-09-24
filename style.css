@@ -73,7 +73,7 @@ button {
 #enemy-hp-bar {
     width: 150px;
     height: 20px;
-    backgroun: #555;
+    background: #555;
     border: 2px solid white;
     margin: 10px auto;
 }
