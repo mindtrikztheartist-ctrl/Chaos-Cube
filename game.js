@@ -2,6 +2,7 @@ let enemyHP = 50;
 let enemyDamage = 25;
 let playerHP = 100;
 let battleOver = false;
+let defending = false;
 
 function attack() {
     if (battleOver) {
@@ -20,7 +21,12 @@ function attack() {
         document.getElementById("message").textContent =
             "Enemy defeated!";
     } else {
-        playerHP -= enemyDamage;
+        if (defending) {
+            playerHP -= enemyDamage / 2;
+            defending = false;
+        } else {
+            playerHP -= enemyDamage;
+        }
         
         document.getElementById("hp").textContent = playerHP;
 
@@ -49,8 +55,13 @@ function magic() {
 }
 
 function defend() {
-  document.getElementById("message").textContent =
-    "You defend yourself!";
+  if (battleOver) {
+      return;
+  }
+    defending = true;
+
+    document.getMessageById("message").textContent =
+        "You defend yourself! Your next attack will do less damage.";
 }
 
 function useItem() {
